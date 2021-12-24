@@ -51,9 +51,4 @@ workflows:
   spring_boot_cicd_workflow:
     jobs:
       - build_and_test
-      - package:
-          requires:
-            - build_and_test
-      - deploy:
-          requires:
-            - package
+
